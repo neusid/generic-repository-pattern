@@ -13,6 +13,7 @@ export class ApiParserRepository extends BaseRepository {
     async extractResponse(rawInput: number): Promise<ParserResult> {
         return this.get<ParserResult>(rawInput);
     }
+
 }
 
 export const apiParserRepository = new ApiParserRepository();
