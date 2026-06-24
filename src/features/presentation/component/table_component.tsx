@@ -21,9 +21,10 @@ export default function TableComponent({ result }) {
                     <TableHead>
                         <TableRow>
                             <TableCell>ID</TableCell>
-                            <TableCell align="right">User ID</TableCell>
-                            <TableCell align="right">Title</TableCell>
-                            <TableCell align="right">Completed</TableCell>
+                            <TableCell align="right">Post ID</TableCell>
+                            <TableCell align="right">Name</TableCell>
+                            <TableCell align="right">Email</TableCell>
+                            <TableCell align="right">Body</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -34,9 +35,10 @@ export default function TableComponent({ result }) {
                             <TableCell component="th" scope="row">
                                 {result.id}
                             </TableCell>
-                            <TableCell align="right">{result.userId}</TableCell>
-                            <TableCell align="right">{result.title}</TableCell>
-                            <TableCell align="right">{result.completed.toString()}</TableCell>
+                            <TableCell align="right">{result.postId}</TableCell>
+                            <TableCell align="right">{result.name}</TableCell>
+                            <TableCell align="right">{result.email}</TableCell>
+                            <TableCell align="right">{result.body}</TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>

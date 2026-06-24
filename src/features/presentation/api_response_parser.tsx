@@ -14,7 +14,7 @@ export default function ApiResponseParserPage() {
     const handleApiRepository = async (input: number) => {
         const result = await apiParserRepository.extractResponse(input);
         setResult(result);
-        console.log(result.title)
+        console.log(result.email)
     }
 
     const boxStyle = {

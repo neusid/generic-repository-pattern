@@ -1,14 +1,14 @@
 import BaseRepository from "./base.repository";
 
 export interface ParserResult {
-    userId: number;
+    postId: number;
     id: number;
-    title: string;
-    completed: string;
+    email: string;
+    body: string;
 }
 
 export class ApiParserRepository extends BaseRepository {
-    constructor() { super('https://jsonplaceholder.typicode.com/todos/') }
+    constructor() { super('https://jsonplaceholder.typicode.com/comments/') }
 
     async extractResponse(rawInput: number): Promise<ParserResult> {
         return this.get<ParserResult>(rawInput);

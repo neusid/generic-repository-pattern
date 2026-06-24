@@ -40,8 +40,8 @@ export default function InputComponent({ Input, setInput, handleApi }) {
                 <div className="row">
                     <form action="" onSubmit={handleForm}>
                         <input type="number" name="input" id="input" style={inputStyle} min={1} required />
-                        <Button type='submit' variant="contained" sx={buttonStyle}>Extract</Button>
                     </form>
+                    <Button type='submit' variant="contained" sx={buttonStyle}>Extract</Button>
                 </div>
             </div>
         </>
